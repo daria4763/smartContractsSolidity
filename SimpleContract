@@ -28,6 +28,11 @@ contract SimpleContract {
         owner = msg.sender;
     }
 
+    constructor_me() {
+        greeting = "Hello, World!";
+        owner = msg.sender;
+    }
+
     // Function to update the greeting (only callable by the owner)
     function updateGreeting(string memory _newGreeting) public onlyOwner {
         // Update the greeting
