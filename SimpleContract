@@ -6,6 +6,10 @@ pragma solidity ^0.8.0;
         greeting = "Hello, World!";
         owner = msg.sender;
     }
+    constructor2() {
+        greeting = "World!";
+        owner = msg.sender;
+    }
     constructor_me() {
         greeting = "Hello, World!";
         owner = msg.sender;
